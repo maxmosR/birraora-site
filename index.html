@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BirraOra — Prossimamente</title>
+<meta name="description" content="BirraOra sta arrivando. Birra a domicilio a Genova, a tutte le ore.">
+<meta property="og:title" content="BirraOra — Prossimamente">
+<meta property="og:description" content="BirraOra sta arrivando. Birra a domicilio a Genova, a tutte le ore.">
+<meta property="og:image" content="logo.jpg">
+<meta name="theme-color" content="#fab623">
+<link rel="icon" href="logo.jpg">
+<link rel="preload" as="image" href="logo.jpg">
+<style>
+  :root { --bg:#fab623; --ink:#2b1d0f; }
+  *,*::before,*::after { box-sizing:border-box; }
+  html,body { margin:0; padding:0; height:100%; }
+  body {
+    background:var(--bg);
+    color:var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height:100dvh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:clamp(16px,4vw,48px);
+    text-align:center;
+    -webkit-font-smoothing:antialiased;
+  }
+  main {
+    width:100%;
+    max-width:720px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:clamp(20px,3.5vw,36px);
+  }
+  .logo {
+    width:min(560px,92%);
+    height:auto;
+    display:block;
+    filter: drop-shadow(0 6px 24px rgba(0,0,0,.08));
+  }
+  h1 {
+    font-size:clamp(28px,5vw,44px);
+    font-weight:800;
+    letter-spacing:.02em;
+    margin:0;
+    line-height:1.1;
+  }
+  p {
+    font-size:clamp(16px,2.2vw,19px);
+    line-height:1.55;
+    max-width:48ch;
+    margin:0 auto;
+    opacity:.9;
+  }
+  .tag {
+    display:inline-block;
+    padding:8px 14px;
+    border:1.5px solid var(--ink);
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  footer {
+    position:fixed;
+    bottom:16px;
+    left:0; right:0;
+    text-align:center;
+    font-size:13px;
+    opacity:.7;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.jpg" alt="BirraOra">
+    <span class="tag">Prossimamente</span>
+    <h1>Stiamo spillando qualcosa di buono.</h1>
+    <p>La tua birra preferita, consegnata a Genova a tutte le ore. Torna a trovarci: siamo quasi pronti.</p>
+  </main>
+  <footer>© BirraOra · Genova</footer>
+</body>
+</html>
